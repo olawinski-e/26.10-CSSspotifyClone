@@ -22,8 +22,7 @@
   </head>
 
   <body>
-    <!-- DESKTOP -->
-
+    <!-- HEADER DESKTOP -->
     <header class="desktop">
       <div class="logo">
         <img class="w-100" src="images/spotify-logo.png" alt="logo spotify" />
@@ -35,6 +34,26 @@
         <a href="#">Help</a>
         <a href="#">Download</a>
       </nav>
+    </header>
+
+    <!-- HEADER MOBILE -->
+    <header class="mobile">
+      <div class="logo">
+        <img class="w-100" src="images/spotify-logo.png" alt="logo spotify" />
+      </div>
+      <div id="dropdown">
+        <button id="hamburger-button" class="dropbtn" onclick="myFunction()">
+          &#9776;
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <nav class="nav-mobile">
+            <a href="#">Premium</a>
+            <a href="#">Discover</a>
+            <a href="#">Help</a>
+            <a href="#">Download</a>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <section class="section1">
@@ -89,26 +108,5 @@
         </div>
       </section>
     </footer>
-
-    <!-- MOBILE -->
-
-    <header class="mobile">
-      <div class="logo">
-        <img class="w-100" src="images/spotify-logo.png" alt="logo spotify" />
-      </div>
-      <div id="dropdown">
-        <button id="hamburger-button" class="dropbtn" onclick="myFunction()">
-          &#9776;
-        </button>
-        <div id="myDropdown" class="dropdown-content">
-          <nav class="nav-mobile">
-            <a href="#">Premium</a>
-            <a href="#">Discover</a>
-            <a href="#">Help</a>
-            <a href="#">Download</a>
-          </nav>
-        </div>
-      </div>
-    </header>
   </body>
 </html>
