@@ -34,30 +34,37 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-  }
 
-  .w-100 {
-    width: 100%;
-  }
+    .w-100 {
+      width: 100%;
+    }
 
-  .nav-desktop {
-    display: flex;
-    width: 33%;
-    justify-content: space-between;
-    font-size: 1.4em;
-    font-weight: 400;
-  }
+    .nav-desktop {
+      display: flex;
+      width: 33%;
+      justify-content: space-between;
+      font-size: 1.4em;
+      font-weight: 400;
+    }
 
-  .dropbtn {
-    display: none;
-  }
+    .dropbtn {
+      display: none;
+    }
 
-  .logo {
-    width: 220px;
-  }
+    .logo {
+      width: 220px;
+    }
 
-  a {
-    cursor: pointer;
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: #00b172;
+    }
   }
 
   /* MIDDLE SECTION */
@@ -99,7 +106,6 @@ body {
 
   /* SECTION  2*/
   .section2 {
-    background-color: darkorange;
     height: 68vh;
     display: flex;
     flex-direction: column;

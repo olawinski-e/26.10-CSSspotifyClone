@@ -37,24 +37,31 @@ body header {
   justify-content: space-between;
   align-items: center;
 }
-body .w-100 {
+body header .w-100 {
   width: 100%;
 }
-body .nav-desktop {
+body header .nav-desktop {
   display: flex;
   width: 33%;
   justify-content: space-between;
   font-size: 1.4em;
   font-weight: 400;
 }
-body .dropbtn {
+body header .dropbtn {
   display: none;
 }
-body .logo {
+body header .logo {
   width: 220px;
 }
-body a {
+body header a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+body header a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #00b172;
 }
 body .section1 {
   background-image: url("../images/landing.jpg");
@@ -88,7 +95,6 @@ body footer {
   margin: 3%;
 }
 body .section2 {
-  background-color: darkorange;
   height: 68vh;
   display: flex;
   flex-direction: column;
