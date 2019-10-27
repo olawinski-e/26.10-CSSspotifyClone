@@ -12,7 +12,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/style.css"
+      href="stylesheets/index.css"
       media="screen"
     />
     <style>
@@ -20,27 +20,21 @@
     </style>
     <title>Spotify</title>
   </head>
+
   <body>
-    <header>
+    <!-- DESKTOP -->
+
+    <header class="desktop">
       <div class="logo">
         <img class="w-100" src="images/spotify-logo.png" alt="logo spotify" />
       </div>
-      <div id="hamburger">
-        <div id="hamburger-content">
-          <nav>
-            <a href="#">Premium</a>
-            <a href="#">Discover</a>
-            <a href="#">Help</a>
-            <a href="#">Download</a>
-          </nav>
-        </div>
-        <button id="hamburger-button" onclick="myFunction()">&#9776;</button>
-        <div id="hamburger-sidebar">
-          <div id="hamburger-sidebar-header"></div>
-          <div id="hamburger-sidebar-body"></div>
-        </div>
-        <div id="hamburger-overlay"></div>
-      </div>
+
+      <nav class="nav-desktop">
+        <a href="#">Premium</a>
+        <a href="#">Discover</a>
+        <a href="#">Help</a>
+        <a href="#">Download</a>
+      </nav>
     </header>
 
     <section class="section1">
@@ -95,5 +89,26 @@
         </div>
       </section>
     </footer>
+
+    <!-- MOBILE -->
+
+    <header class="mobile">
+      <div class="logo">
+        <img class="w-100" src="images/spotify-logo.png" alt="logo spotify" />
+      </div>
+      <div id="dropdown">
+        <button id="hamburger-button" class="dropbtn" onclick="myFunction()">
+          &#9776;
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <nav class="nav-mobile">
+            <a href="#">Premium</a>
+            <a href="#">Discover</a>
+            <a href="#">Help</a>
+            <a href="#">Download</a>
+          </nav>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
