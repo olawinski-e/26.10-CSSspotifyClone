@@ -9,6 +9,7 @@ White: #FFF
 
 body {
   width: 100%;
+
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -53,6 +54,44 @@ nav {
 
 a {
   cursor: pointer;
+}
+
+#hamburger-button {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 30px;
+  vertical-align: top;
+  padding: 0;
+  line-height: 47px;
+  float: right;
+  margin-right: 32px;
+}
+
+#hamburger-sidebar {
+  display: none;
+  position: fixed;
+  width: 84%;
+  z-index: 20;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-out;
+}
+
+#hamburger-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* MIDDLE SECTION */
@@ -118,4 +157,26 @@ img {
 .section3 {
   background-color: mediumvioletred;
   height: 100vh;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 42px;
+    line-height: 56px;
+  }
+
+  #hamburger-content {
+    display: none;
+  }
+
+  #hamburger-button,
+  #hamburger-sidebar,
+  .hamburger-activated #hamburger-overlay {
+    display: block;
+  }
+
+  .hamburger-activated #hamburger-sidebar {
+    transform: translateX(0);
+  }
 }
